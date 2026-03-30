@@ -1,6 +1,6 @@
 # llamarc42
 
-Architecture-aware conversations with local AI.
+Architecture-aware conversations with local AI, grounded in your project documentation
 
 ## What this is
 
