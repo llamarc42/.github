@@ -1,42 +1,41 @@
 # llamarc42
 
-Architecture-aware conversations with local AI, grounded in your project documentation
+llamarc42 is a documentation-first, local-first framework for preserving
+authoritative engineering knowledge and architectural decisions, independently
+of any particular AI model, agent, or development tool.
 
-## What this is
+## Why it exists
 
-llamarc42 is a local-first AI platform for engaging in structured, architecture-aware conversations grounded in project documentation.
+Project purpose, constraints, architecture, and decisions are often scattered
+across conversations, prompts, and individual experience. llamarc42 gives that
+knowledge a durable, project-owned, human-readable home whose authority is
+explicit and reviewable.
 
-It enables engineers to:
-- reason about systems using real project artifacts
-- maintain persistent, project-scoped conversations
-- enforce architectural constraints and decisions during AI-assisted workflows
+Engineers and architects maintain the documentation. People and AI-assisted
+workflows may consume the same material, but tools do not become the source of
+truth and cannot silently replace accepted project knowledge.
 
-The system treats documentation as the source of truth and uses it to guide all interactions.
+## Repository roles
 
-## Who this is for
+- [`docs`](https://github.com/llamarc42/docs) owns authoritative contracts,
+  ADRs, current guidance, and preserved history.
+- [`core`](https://github.com/llamarc42/core) is the planned reusable C#
+  implementation of accepted discovery, validation, template, and
+  initialization behavior.
+- [`cli`](https://github.com/llamarc42/cli) is the planned command surface over
+  Core.
+- [`powershell`](https://github.com/llamarc42/powershell) preserves the earlier
+  local-copilot prototype as historical and reference material.
+- [`api`](https://github.com/llamarc42/api) is deferred for v0.1.
+- [`llamarc42.con`](https://github.com/llamarc42/llamarc42.con) is an
+  independent project; any future integration is optional and separately
+  governed.
 
-- software engineers
-- architects
-- platform engineers
-- teams that rely on structured documentation and decision records
+Core and CLI v0.1 are planned work; they are not yet complete. Multi-repository
+federation and Documentation Contract v0.2 are not current capabilities.
 
-## Core use cases
+## Start here
 
-- architecture discussions grounded in real project context
-- design validation against constraints and decisions
-- long-running project conversations over days or weeks
-- structured reviews (ADR, drift, constraints)
-
-## What this is not
-
-- not a general-purpose chatbot
-- not a cloud-dependent AI service
-- not a replacement for documentation
-- not an autonomous agent platform
-
-llamarc42 is a **project-aware copilot**, not a general AI assistant.
-
-## Key idea
-
-> The model does not know your system — your documentation does.
-> 
+Read the [current project definition](https://github.com/llamarc42/docs/blob/main/projects/llamarc42/project.md),
+the [accepted contracts](https://github.com/llamarc42/docs/tree/main/projects/llamarc42/specifications),
+and the [three-phase roadmap](https://github.com/llamarc42/docs/blob/main/projects/llamarc42/quality/roadmap.md).
